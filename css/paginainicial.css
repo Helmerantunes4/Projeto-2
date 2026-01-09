@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #f2f2f2;
+    color: #1c1c1c;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #b11217;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.esquerda .logo {
+    height: 50px;
+}
+
+.links ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.links ul li {
+    margin-left: 20px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.links ul li a:hover {
+    background-color: white;
+    color: #b11217;
+}
+
+.hero {
+    background-color: #ffffff;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-conteudo {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.explorar {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #b11217;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.explorar:hover {
+    background-color: #8f0f13;
+}
+
+.hero-gif {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.introducao {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+}
+
+.introducao h2 {
+    margin-bottom: 15px;
+}
+
+.introducao p {
+    margin-bottom: 10px;
+}
+
+.colecoes {
+    background-color: #e6e6e6;
+    padding: 40px;
+}
+
+.colecoes h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #e62429;
+}
+
+.convite {
+    background-color: #b11217;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.convite h2 {
+    margin-bottom: 15px;
+}
+
+.auti {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: white;
+    color: #b11217;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auti:hover {
+    background-color: #f2f2f2;
+}
+
+.footer {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
