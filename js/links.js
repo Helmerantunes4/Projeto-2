@@ -1,4 +1,3 @@
-// Lista de páginas individuais
 const paginas = {
     "Iron Man": "ironman.html",
     "Spider-Man": "spiderman.html",
@@ -13,8 +12,6 @@ const paginas = {
     "Wolverine": "wolverine.html",
     "X-Men": "xmen.html"
 };
-
-// Seleciona todos os títulos
 document.querySelectorAll(".poster-info h2").forEach(titulo => {
     const nome = titulo.textContent.trim();
 

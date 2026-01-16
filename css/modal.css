@@ -1,0 +1,51 @@
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 2000;
+    overflow-y: auto;
+}
+
+.modal-box {
+    background: #111;
+    margin: 60px auto;
+    padding: 30px;
+    max-width: 1000px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.modal-conteudo {
+    display: flex;
+    gap: 30px;
+}
+
+.poster-area img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.info h1 {
+    margin-top: 0;
+}
+
+.data {
+    color: #ccc;
+}
+
+.ficha-tecnica .linha {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding: 5px 0;
+}

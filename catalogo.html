@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>catalogo da marvel</title>
     <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/modal.css">
 
 </head>
 
@@ -18,7 +19,8 @@
 
         <nav class="links">
             <ul>
-                <li><a href="paginainicial.html" class="Inicio">Início</a></li>
+                <li><a href="paginainicial.html">Início</a></li>
+                <li><a href="catalogo.html" class="ativo">Catálago</li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
@@ -36,7 +38,7 @@
                 <h1>Melhores lançamentos</h1>
             </div>
             <section class="poster-grid">
-                <div class="poster">
+                <div class="poster" data-id="iron-man">
                     <img src="imagens/iron man.jpg" alt="Iron Man">
                     <div class="poster-info">
                         <h2>Iron Man</h2>
@@ -44,7 +46,7 @@
                     </div>
                 </div>
 
-                <div class="poster">
+                <div class="poster" data-id="spider-man">
                     <img src="imagens/spider man.jpg" alt="Spider-Man">
                     <div class="poster-info">
                         <h2>Spider-Man</h2>
@@ -52,7 +54,7 @@
                     </div>
                 </div>
 
-                <div class="poster">
+                <div class="poster" data-id="captain america">
                     <img src="imagens/captain america.jpg" alt="Captain America">
                     <div class="poster-info">
                         <h2>Captain America</h2>
@@ -60,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="poster">
+                <div class="poster" data-id="thor">
                     <img src="imagens/thor.jpg" alt="Thor">
                     <div class="poster-info">
                         <h2>Thor</h2>
@@ -73,7 +75,7 @@
                     <h1>Novos lançamentos</h1>
                 </div>
             </section>
-            <section class="poster-grid">
+            <section class="poster-grid" data-id="avengers">
                 <div class="poster">
                     <img src="imagens/avengers.jpg" alt="Avengers">
                     <div class="poster-info">
@@ -81,21 +83,21 @@
                         <span>lançada em: 1 de janeiro de 2025</span>
                     </div>
                 </div>
-                <div class="poster">
+                <div class="poster" data-id="deadpool">
                     <img src="imagens/deadpool.jpg" alt="Deadpool">
                     <div class="poster-info">
                         <h2>Deadpool</h2>
                         <span>Lançada em: 10 de janeiro de 2025</span>
                     </div>
                 </div>
-                <div class="poster">
+                <div class="poster" data-id="fantastic4">
                     <img src="imagens/f4.jpg" alt="fantastic4">
                     <div class="poster-info">
                         <h2>Quarteto-Fantástico</h2>
                         <span>lançada em: 1 de novembro de 2025</span>
                     </div>
                 </div>
-                <div class="poster">
+                <div class="poster" data-id="guardians of galaxy">
                     <img src="imagens/gg.jpg" alt="guardians of galaxy">
                     <div class="poster-info">
                         <h2>Guardiões da galáxia</h2>
@@ -108,7 +110,7 @@
                     <h1>Achamos que vais gostar desses títulos</h1>
                 </div>
             </section>
-            <section class="poster-grid">
+            <section class="poster-grid" data-id="Hulk">
                 <div class="poster">
                     <img src="imagens/hulk.jpg" alt="Hulk">
                     <div class="poster-info">
@@ -116,21 +118,21 @@
                         <span>Lançada em: 9 de abril de 1968</span>
                     </div>
                 </div>
-                <div class="poster">
+                <div class="poster" data-id="moon knight">
                     <img src="imagens/moon.jpg" alt="moon knight">
                     <div class="poster-info">
                         <h2>Moon knight</h2>
                         <span>lançada em: 21 de julho de 2021</span>
                     </div>
                 </div>
-                <div class="poster">
+                <div class="poster" data-id="wolverine">
                     <img src="imagens/wolverine.jpg" alt="wolverine">
                     <div class="poster-info">
                         <h2>Wolverine</h2>
                         <span>Lançada em: 26 de setembro de 2023</span>
                     </div>
                 </div>
-                <div class="poster">
+                <div class="poster" data-id="x-men">
                     <img src="imagens/xmen.jpg" alt="X-men">
                     <div class="poster-info">
                         <h2>X-Men</h2>
@@ -139,6 +141,22 @@
                 </div>
             </section>
 
+        </section>
+        <section id="modal">
+        </section>
+        <section class="historic">
+            <div class="historia">
+                <h3>Momentos épicos</h3>
+                <ul style="list-style-type:none;">
+                    <li>Thor chega a Wakanda-Infinity War (2018)</li>
+                    <li>O estalar de dedos do Thanos-Infinity War (2018)</li>
+                    <li>“Avengers… Assemble.”frase icónica-Endgame (2019)</li>
+                    <li>O sacrifício do Tony Stark-Endgame (2019)</li>
+                    <li>Os três Homens-Aranha juntos -No Way Home (2021)</li>
+                    <li>Capitão América levanta o Mjolnir-Endgame (2019)</li>
+                    <li></li>
+                </ul>
+            </div>
         </section>
     </main>
 
@@ -157,7 +175,7 @@
         </nav>
         © 2025 • Cartazes inspirados no universo Marvel
     </footer>
-    <script src="js/links.js"></script>
+    <script src="js/modal.js"></script>
 
 </body>
 
