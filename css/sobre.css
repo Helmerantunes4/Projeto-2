@@ -7,7 +7,6 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #b11217;
     padding: 15px 40px;
