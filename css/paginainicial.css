@@ -11,35 +11,38 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #b11217;
-    padding: 15px 40px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
 }
 
-.logo {
-    height: 55px;
+.esquerda .logo {
+    height: 50px;
 }
 
 .links ul {
-    list-style: none;
+    list-style-type: none;
     display: flex;
-    gap: 25px;
+    margin-left: auto;
 }
 
-.links a {
+.links ul li {
+    margin-left: 20px;
+}
+
+.links ul li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: bold;
-    transition: 0.3s;
+    padding: 6px 12px;
+    border-radius: 5px;
 }
 
-.links a:hover,
-.links .ativo {
-    color: black;
+.links ul li a:hover {
+    background-color: white;
+    color: #b11217;
 }
-
 
 .hero {
     background-color: #ffffff;
