@@ -158,6 +158,25 @@ body {
     background-color: #f2f2f2;
 }
 
+.historic {
+    padding: 20px;
+
+}
+
+.historia h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 0 20px 0;
+    border-left: 5px solid #ED1D24;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.historia li {
+    line-height: 1.7;
+}
+
+
 .footer {
     background-color: #1c1c1c;
     color: white;

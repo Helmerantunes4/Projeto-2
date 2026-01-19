@@ -12,6 +12,8 @@ linkLogin.forEach(link => {
 });
 
 function criarModalLogin() {
+  console.log("entrei");
+
   const modal = document.createElement("div");
   modal.classList.add("modalLogin");
 
@@ -28,7 +30,9 @@ function criarModalLogin() {
     </div>
   `;
 
-  document.body.appendChild(modal);
+  console.log(modal);
+
+  document.querySelector("body").appendChild(modal);
 
   modal.querySelector(".fecharLogin").addEventListener("click", () => modal.remove());
 
@@ -80,9 +84,9 @@ function atualizarLinksLogin() {
   const botaoCriar = document.getElementById("botaoCriarCatalogoSite");
 
   if (sessionStorage.getItem("tipoConta") === "admin") {
-    botaoCriar.style.display = "block";
+    // botaoCriar.style.display = "block";
   } else {
-      botaoCriar.style.display = "none";
+    // botaoCriar.style.display = "none";
   }
 }
 
@@ -190,6 +194,6 @@ function abrirModalCriarCatalogo() {
   });
 }
 
-document.getElementById("botaoCriarCatalogoSite").addEventListener("click", () => {
-    abrirModalCriarCatalogo();
-});
+// document.getElementById("botaoCriarCatalogoSite").addEventListener("click", () => {
+//   abrirModalCriarCatalogo();
+// });
