@@ -12,13 +12,28 @@ function criarPoster(catalogo, container) {
 
   poster.innerHTML = `
     <img src="${catalogo.imagem}" alt="${catalogo.titulo}">
-    <div class="poster-info">
+    <div class="posterInfo">
       <h2>${catalogo.titulo}</h2>
-      <span>${catalogo.lancamento}</span>
+      <span>${catalogo.lancamento}</span><br>
+      <button class="botaoAdd">Adicionar</button>
     </div>
   `;
 
+  
   poster.addEventListener("click", () => criarModalCatalogo(catalogo));
+
+  const botaoAdd = poster.querySelector(".botaoAdd");
+
+  botaoAdd.addEventListener("click", (e) => {
+    e.stopPropagation(); 
+
+    if (sessionStorage.getItem("logado") === "sim") {
+      botaoAdd.textContent = "Adicionado";
+      botaoAdd.disabled = true;
+    } else {
+      alert("Tens de fazer login para adicionar catálogos.");
+    }
+  });
 
   container.appendChild(poster);
 }
@@ -31,27 +46,36 @@ catalogos.forEach(c => {
 
 function criarModalCatalogo(catalogo) {
   const modal = document.createElement("div");
-  modal.classList.add("modal-dinamico");
+  modal.classList.add("modalCatalogo1");
 
   modal.innerHTML = `
-    <div class="modal-content">
-      <button class="fechar-modal">✖</button>
+    <div class="modalConteudo">
+      <button class="fecharModal">✖</button>
       <h2>${catalogo.titulo}</h2>
-      <img src="${catalogo.imagem}" style="width:100%; border-radius: 10px; margin: 10px 0;">
-      <p><strong>Lançamento:</strong> ${catalogo.lancamento}</p>
-      <p><strong>Género:</strong> ${catalogo.genero}</p>
-      <p><strong>Classificação:</strong> ${catalogo.classificacao}</p>
-      <p>${catalogo.sinopse}</p>
-      <h3>Curiosidades</h3>
-      <ul>
-        ${catalogo.curiosidades.map(c => `<li>${c}</li>`).join("")}
-      </ul>
+      <div class="centro">
+        <div>
+          <img src="${catalogo.imagem}">
+        </div>
+        <div>
+          <p><strong>Lançamento:</strong> ${catalogo.lancamento}</p>
+          <p><strong>Género:</strong> ${catalogo.genero}</p>
+          <p><strong>Classificação:</strong> ${catalogo.classificacao}</p>
+          <p>${catalogo.sinopse}</p>
+          <h3>Curiosidades</h3>
+          <ul>
+            ${catalogo.curiosidades.map(c => `<li>${c}</li>`).join("")}
+          </ul>
+        </div>
+      </div>
     </div>
   `;
 
   document.body.appendChild(modal);
 
-  modal.querySelector(".fechar-modal").addEventListener("click", () => {
+  modal.querySelector(".fecharModal").addEventListener("click", () => {
     modal.remove();
   });
 }
+
+
+

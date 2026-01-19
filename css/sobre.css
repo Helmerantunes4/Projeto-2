@@ -1,8 +1,13 @@
-body {
+* {
     margin: 0;
-    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
     background-color: #f2f2f2;
     color: #1c1c1c;
+    line-height: 1.6;
 }
 
 .header {
@@ -10,7 +15,6 @@ body {
     padding: 15px 30px;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .esquerda .logo {
@@ -21,6 +25,10 @@ body {
     list-style-type: none;
     display: flex;
     margin-left: auto;
+}
+
+.links ul li {
+    margin-left: 20px;
 }
 
 .links ul li a {
@@ -36,16 +44,6 @@ body {
     color: #b11217;
 }
 
-.banner {
-    padding: 0px;
-
-}
-
-.banner img {
-    height: 480px;
-    width: 100%;
-}
-
 .titulo {
     text-align: center;
     padding: 60px 20px;
@@ -55,10 +53,12 @@ body {
 .titulo h1 {
     font-size: 2.8rem;
     margin-bottom: 10px;
+    color: #b11217;
 }
 
 .titulo p {
     font-size: 1.2rem;
+    color: #e62429
 }
 
 .conteudo {
