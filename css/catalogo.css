@@ -147,61 +147,13 @@ footer .links {
   color: #b11217;
 }
 
-
-.modalLogin {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.modalLoginConteudo {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
-
-.modalLoginConteudo input {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 8px;
-}
-
-.modalLoginConteudo button {
-  padding: 8px 12px;
-  background: #b11217;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.modalLoginConteudo .fecharLogin {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-}
-
 .modalNovoCatalogo {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,7 +176,7 @@ footer .links {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,7 +190,7 @@ footer .links {
   width: 900px;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border: 4px solid rgb(169, 20, 20)
 }
 
@@ -279,7 +231,7 @@ footer .links {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,7 +245,7 @@ footer .links {
   width: 400px;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .botaoAdd {
@@ -354,3 +306,265 @@ footer .links {
   background: #8d0e12;
 }
 
+@media (max-width: 767px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #f2f2f2;
+    color: #1c1c1c;
+    line-height: 1.4;
+    font-size: 16px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    background-color: #b11217;
+  }
+
+  .esquerda .logo {
+    height: 40px;
+    width: auto;
+  }
+
+  .links ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: auto;
+  }
+
+  .links ul li {
+    margin-left: 10px;
+  }
+
+  .links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 8px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  .links ul li a:hover {
+    background-color: white;
+    color: #b11217;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+
+  .texto p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #b11217;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .poster-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  .poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .posterInfo h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .posterInfo span {
+    font-size: 14px;
+    color: #000;
+  }
+
+  .botaoAdd {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 10px;
+    background-color: #1c1c1c;
+    color: #666;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .logo {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .link ul li a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .modalNovoCatalogo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .modalNovoCatalogo .fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .modalCatalogo1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+
+  }
+
+  .modalCatalogo1 .modalConteudo {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 327px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border: 4px solid rgb(169, 20, 20);
+  }
+
+  .modalConteudo h2 {
+    color: #8d0e12;
+  }
+
+  .centro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+  }
+
+  .centro img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .centro p {
+    margin: 6px;
+    font-size: 22px;
+  }
+
+  .centro h3 {
+    font-size: 24px;
+  }
+
+  .centro ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  .modalMeusCatalogos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .header {
+    padding: 15px 30px;
+  }
+
+  .esquerda .logo {
+    height: 50px;
+  }
+
+  .links ul li a {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  main {
+    padding: 30px 20px;
+  }
+
+  .poster-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .posterInfo h2 {
+    font-size: 18px;
+  }
+
+  .posterInfo span {
+    font-size: 14px;
+  }
+
+  .botaoAdd {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  footer {
+    padding: 18px;
+    font-size: 12px;
+  }
+}

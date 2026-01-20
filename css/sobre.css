@@ -138,3 +138,216 @@ footer .links {
 .link ul li a:hover {
     color: #b11217;
 }
+
+@media (max-width: 767px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Trebuchet MS', sans-serif;
+        background-color: #f2f2f2;
+        color: #1c1c1c;
+        line-height: 1.4;
+        font-size: 16px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 10px;
+        background-color: #b11217;
+    }
+
+    .esquerda .logo {
+        height: 40px;
+        width: auto;
+    }
+
+    .links ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-left: auto;
+    }
+
+    .links ul li {
+        margin-left: 10px;
+    }
+
+    .links ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 5px 8px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .links ul li a:hover {
+        background-color: white;
+        color: #b11217;
+    }
+
+    .titulo {
+        text-align: center;
+        padding: 40px 15px;
+    }
+
+    .titulo h1 {
+        font-size: 24px;
+        color: #b11217;
+        margin-bottom: 10px;
+    }
+
+    .titulo p {
+        font-size: 14px;
+        color: #e62429;
+        margin-bottom: 20px;
+    }
+
+    .conteudo {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .conteudo h2 {
+        font-size: 18px;
+        color: #e62429;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .lista {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    .lista li {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 8px;
+        color: #1c1c1c;
+    }
+
+    .gif {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        font-size: 10px;
+        color: #666;
+        background-color: #1c1c1c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .logo {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    footer .links {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .link ul {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .link ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 5px 8px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+
+    .link ul li a:hover {
+        color: #b11217;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .header {
+        padding: 15px 30px;
+    }
+
+    .esquerda .logo {
+        height: 50px;
+        width: auto;
+    }
+
+    .links ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .titulo {
+        padding: 50px 20px;
+    }
+
+    .titulo h1 {
+        font-size: 32px;
+    }
+
+    .titulo p {
+        font-size: 16px;
+    }
+
+    .conteudo {
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .conteudo h2 {
+        font-size: 22px;
+        margin-top: 35px;
+        margin-bottom: 12px;
+    }
+
+    .conteudo p,
+    .lista li {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .gif {
+        margin: 25px 0;
+    }
+
+    footer {
+        padding: 18px;
+        font-size: 12px;
+    }
+}
