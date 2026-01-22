@@ -177,11 +177,47 @@ body {
 }
 
 
-.footer {
-    background-color: #1c1c1c;
-    color: white;
+footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    font-size: 12px;
+    color: #666;
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .logo {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer .links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.link ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+}
+
+
+.link ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.link ul li a:hover {
+    color: #b11217;
 }
 
 @media (max-width: 767px) {
