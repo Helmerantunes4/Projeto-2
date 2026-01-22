@@ -266,13 +266,14 @@ footer .links {
 
 .modalConteudoNovo {
   background: white;
-  padding: 20px;
-  width: 400px;
+  padding: 30px;
+  width: 300px;
   border-radius: 8px;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .modalConteudoNovo label {
-  margin-top: 10px;
   font-weight: bold;
   display: block;
 }

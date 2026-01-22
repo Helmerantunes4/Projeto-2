@@ -26,11 +26,10 @@ function criarModalLogin() {
         <input type="password" id="password" placeholder="Password" required>
         <button type="submit">Entrar</button>
       </form>
-      <p id="mensagemLogin"></p>
+      <p id="mensagemLogin"></p><br>
+      <button id="abrirCriarConta" class="botaoCriarConta">Criar conta</button>
     </div>
   `;
-
-  console.log(modal);
 
   document.querySelector("body").appendChild(modal);
 
@@ -84,9 +83,9 @@ function atualizarLinksLogin() {
   const botaoCriar = document.getElementById("botaoCriarCatalogoSite");
 
   if (sessionStorage.getItem("tipoConta") === "admin") {
-    // botaoCriar.style.display = "block";
+    botaoCriar.style.display = "block";
   } else {
-    // botaoCriar.style.display = "none";
+    botaoCriar.style.display = "none";
   }
 }
 
@@ -109,7 +108,7 @@ function criarModalCatalogos() {
 
   if (tipo === "user") {
     conteudo = `
-      <p>• Spider‑Man (exemplo)</p>
+      <p>• Spider-Man</p>
     `;
   }
 
@@ -194,6 +193,30 @@ function abrirModalCriarCatalogo() {
   });
 }
 
-// document.getElementById("botaoCriarCatalogoSite").addEventListener("click", () => {
-//   abrirModalCriarCatalogo();
-// });
+document.getElementById("botaoCriarCatalogoSite").addEventListener("click", () => {
+  abrirModalCriarCatalogo();
+});
+function fazerLogout() {
+  sessionStorage.clear();
+  atualizarLinksLogin();
+  window.location.reload();
+}
+document.addEventListener("DOMContentLoaded", () => {
+  const botaoLogout = document.getElementById("botaoLogout");
+
+  if (botaoLogout) {
+    botaoLogout.addEventListener("click", (e) => {
+      e.preventDefault();
+      fazerLogout();
+    });
+  }
+});
+const liLogout = document.getElementById("liLogout");
+
+if (sessionStorage.getItem("logado") === "sim") {
+  liLogout.style.display = "block";
+} else {
+  liLogout.style.display = "none";
+}
+
+
