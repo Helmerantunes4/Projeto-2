@@ -56,7 +56,7 @@ body {
     max-width: 600px;
 }
 
-.hero h2 {
+.hero h1 {
     font-size: 32px;
     margin-bottom: 15px;
 }
@@ -120,6 +120,7 @@ body {
 }
 
 .card {
+    border-left: #1c1c1c 5px solid;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
